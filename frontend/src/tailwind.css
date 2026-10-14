@@ -23,7 +23,7 @@ button:disabled { cursor: not-allowed; opacity: .55; }
 button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid #818cf866; outline-offset: 2px; }
 
 .sidebar {
-  @apply fixed inset-y-0 left-0 z-40 flex w-[292px] flex-col border-r border-slate-200 bg-white text-slate-700;
+  @apply fixed inset-y-0 left-0 z-40 flex w-[292px] flex-col justify-start border-r border-slate-200 bg-white text-slate-700;
   transition: transform .22s ease;
 }
 .main-area {
@@ -146,7 +146,7 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px s
 .profile-copy strong { @apply text-[13px] font-semibold text-slate-800; }
 .profile-copy small { @apply text-[10px] text-slate-500; }
 .profile-online { @apply absolute bottom-[15px] left-[43px] h-2.5 w-2.5 rounded-full border-2 border-slate-50 bg-emerald-500; }
-.sidebar-navigation { @apply min-h-0 flex-1 overflow-y-auto px-3 pb-4; }
+.sidebar-navigation { @apply min-h-0 overflow-y-auto px-3 pb-4; }
 .sidebar-section-title { @apply px-3 pb-2 pt-0 text-[10px] font-bold tracking-[.1em] text-slate-400; }
 .nav-list { @apply grid gap-1; }
 .nav-link { @apply min-h-[48px] gap-3; }
@@ -156,7 +156,7 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px s
 .nav-count-green { @apply bg-emerald-50 text-emerald-600; }
 .interactive-heading { @apply pb-2 pt-7; }
 .orchestrator-link { @apply flex min-h-10 w-full items-center gap-3 rounded-lg border-0 bg-transparent px-3.5 text-left text-[13px] font-semibold text-[#df7059] transition hover:bg-orange-50; }
-.sidebar-status { @apply shrink-0 border-t border-slate-100 px-4 py-4; }
+.sidebar-status { @apply mt-auto shrink-0 border-t border-slate-100 px-4 py-4; }
 .online-pill { @apply flex h-9 items-center gap-2 rounded-full bg-[#e8f4ef] px-3 text-[12px] font-medium text-[#479f82]; }
 .online-pill i { @apply h-2 w-2 rounded-full bg-[#39a983]; }
 .online-pill-warning { @apply bg-amber-50 text-amber-700; }

@@ -1,0 +1,16 @@
+# Dependencies
+**/node_modules/
+
+# Generated build output
+**/dist/
+**/build/
+**/target/
+
+# Local environment files (keep example templates tracked)
+**/.env
+**/.env.*
+!**/.env.example
+
+# Local-only Spring configuration and logs
+**/application-local.yml
+**/*.log
